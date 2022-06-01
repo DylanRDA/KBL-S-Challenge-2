@@ -7,7 +7,7 @@ public class Persons {
     public static void main (String[] args){
         
   
-
+      
   clips.load("load-persons.cpl");
   clips.load("load-persons-rules.cpl");
   

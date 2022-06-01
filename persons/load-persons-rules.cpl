@@ -30,4 +30,7 @@
 
 ;; Defining a rule for finding male persons, older than 20 years, and printing their names
 
+(defrule my-rule6
+ (person (gender male) (name ?x)(age ?a)) => (printout t ?x "  is a male and older than 20 years old" crlf ))
+    
 
