@@ -23,6 +23,7 @@
   (slot order-number)
   (slot part-number)
   (slot customer-id)
-  (slot quantity (default 1)))
+  (slot quantity (default 1))
+  )
 
 

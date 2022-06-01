@@ -6,12 +6,11 @@ public class market {
 
     public static void main (String[] args){
         
-  //clips.load("load-fruta.cpl");
-  //clips.load("load-fruta-rules.cpl");
+  
 
   clips.load("templates.cpl");
   clips.load("facts.cpl");
-  clips.load("rules.cpl");
+  clips.load("rules2.cpl");
 
         clips.reset();
         clips.run();
