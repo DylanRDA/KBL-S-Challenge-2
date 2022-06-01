@@ -7,7 +7,7 @@ public class Prodcust {
     public static void main (String[] args){
         
   
-
+  
   clips.load("load-prod-cust.cpl");
   clips.load("load-prodcust-rules.cpl");
   

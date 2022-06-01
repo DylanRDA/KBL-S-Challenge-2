@@ -24,14 +24,16 @@
 ;; however you can use NOT for making the rule to return true (price ?pr)
 
 (defrule my-rule14 
-(not (product (category smartphone)(price ~50) (name ?n)))
+(product (category smartphone)(price ?valor) (name ?n))
+(not(test (< ?valor 50)))
 =>
-(printout t "no smartphones cheaper than 50" crlf ))
+(printout t  "no smartphones cheaper than 50" crlf ))
 
 
 ;; Defining a rule for finding smartphones cheaper than 100 dlls
 (defrule my-rule15 
-(product (category smartphone) (price ~ 100) (name ?n))
+(product (category smartphone) (price ?valor1) (name ?n))
+(test (< ?valor1 100))
 =>
 (printout t ?n " is cheaper than 100 dlls" crlf ))
 
